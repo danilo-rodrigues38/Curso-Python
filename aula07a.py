@@ -14,5 +14,5 @@ print('A soma é {}, o produto é {}, a divisão é {:.2f}'.format(s, m, d), end
 
 print('A divisão inteira é {}, a potência é {}, o resto da divaisão é {}'.format(di, e, r))
 
-# caso queira a quebra da linha pode ser utilizado o comando ", \n"
+# caso queira a quebra da linha pode ser utilizado o comando, "\n".
 print('A soma é {}, \no produto é {} \na divisão é {:.2f}'.format(s, m, d))
