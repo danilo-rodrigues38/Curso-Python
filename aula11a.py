@@ -15,12 +15,11 @@
 #                       35 - Roxo           45 - Roxo
 #                       36 - Cian           46 - Cian
 #                       37 - Cinza          47 - Cinza
-print('\033[mCurso em Vídeo\033[m')
-print('\033[0;21;41mCurso em Vídeo\033[m')  # Neste exemplo as letras ficam em branco e toda a linha em vermelho
-print('\033[4;33;44mCurso em Vídeo\033[m')  # Neste exemplo as letras ficam em amarelo e o fundo em azul
-print('\033[1;35;43mCurso em Video\033[m')  # Neste exemplo as letras ficam em roxo e o fundo em amarelo
-print('\033[0;30;42mCurso em Video\033[m')  # Neste exemplo as letras ficam em branco e o fundo em verde
-print('\033[21;40mCurso em Video\033[m')         # Neste exemplo as letras ficam em cinza e o fundo em preto
-print('\033[7;20;40mCurso em Video\033[m')     # Neste exemplo as letras ficam em preto e o fundo em branco
-print('\033[mCurso em Vídeo\033[m')
-print('\033[1;33;40mCurso em Vídeo\033[m')
+print('\033[mCurso em Vídeo\033[m\n')
+print('\033[0;21;41mCurso em Vídeo\033[m\n')  # Neste exemplo as letras ficam em branco e toda a linha em vermelho
+print('\033[4;33;44mCurso em Vídeo\033[m\n')  # Neste exemplo as letras ficam em amarelo e o fundo em azul
+print('\033[1;35;43mCurso em Video\033[m\n')  # Neste exemplo as letras ficam em roxo e o fundo em amarelo
+print('\033[0;30;42mCurso em Video\033[m\n')  # Neste exemplo as letras ficam em branco e o fundo em verde
+print('\033[21;40mCurso em Video\033[m\n')    # Neste exemplo as letras ficam em cinza e o fundo em preto
+print('\033[7;20;40mCurso em Video\033[m\n')  # Neste exemplo as letras ficam em preto e o fundo em branco
+print('\033[1;33;40mCurso em Vídeo\033[m\n')
