@@ -4,8 +4,9 @@ n3 = int(input("Digite um valor: "))    # Força o retorno de um valor inteiro
 n4 = float(input("Digite um valor: "))  # Força o retorno de um valor real
 n5 = bool(input("Digite um valor: "))   # Força o retorno de um valor lógico, verdadeiro ou falso 'True' or 'False'
 
-# Para o caso do valor Boolean, caso seja digitado qualquer valor para a variável, sempre terá o retorno 'True' se não
-# digitado nenhum valor, ela retornará 'False'.
+'''
+Para o caso do valor Boolean, caso seja digitado qualquer valor para a variável, sempre terá o retorno 'True', caso não seja digitado nenhum valor, ela retornará 'False'.
+'''
 
 print('Tipo primitivo para n1 = ', type(n1), n1)
 print('Tipo primitivo para n2 = ', type(n2), n2)
