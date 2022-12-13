@@ -1,3 +1,3 @@
 # Curso-Python
--**Curso em Vídeo**- com exercícios e exemplos dados em aulas.
+_**Curso em Vídeo**_ com exercícios e exemplos dados em aulas.
 Todos os exercícios corrigidos.
