@@ -2,6 +2,8 @@
 help(print)
 help(input)
 
+
+
 # docstrings
 def contador(i, f, p):
     """
@@ -42,17 +44,21 @@ soma()
 soma(b=4, c=5)
 
 
+
 # Escopo de variáveis
 def teste():
-    x = 8
+    x = 8  # "x" é uma variável local, ou seja, funciona somente na função teste
     print(f'Na função teste, n vale {n}.')
     print(f'Na função teste, x vale {x}.')
 
 
-n = 2
+# Programa principal
+n = 2  # "n" é uma variável global
 print(f'No programa principal, n vale {n}.')
 teste()
-#print(f'Na função teste, x vale {x}.')  neste caso o X não funciona por ser local
+#print(f'No programa princial, x vale {x}.')  # neste caso, o "x" não funcionará, por ser uma variável local.
+
+
 
 # Retorno de valores
 def somar(a=0, b=0, c=0):
