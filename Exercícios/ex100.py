@@ -20,7 +20,7 @@ def somapar(lista):
     for valor in lista:
         if valor % 2 == 0:
             soma += valor
-    print(f'Somando os valores de {lista}, temos {soma}.')
+    print(f'Somando os valores PARES da lista {lista}, temos {soma}.')
 
 
 #Programa principal

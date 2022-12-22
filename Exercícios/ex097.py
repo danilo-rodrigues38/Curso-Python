@@ -3,9 +3,9 @@
 # Ex:
 # escreva(‘Olá, Mundo!’)
 # Saída:
-# ~~~~~~~~~
-# Olá, Mundo!
-# ~~~~~~~~~
+# ~~~~~~~~~~~~~~~
+#   Olá, Mundo!
+# ~~~~~~~~~~~~~~~
 
 def escreva(msg):
     tam = len(msg) + 4
