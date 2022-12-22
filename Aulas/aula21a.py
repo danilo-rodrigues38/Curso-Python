@@ -24,7 +24,7 @@ help(contador)
 
 
 # Parametros opcionais
-def somar(a = 0, b = 0, c = 0):
+def soma(a=0, b=0, c=0):
     """
     -> Faz a soma de três valores e mostra o resultado na tela.
     :param a: recebe o primeiro valor
@@ -36,10 +36,10 @@ def somar(a = 0, b = 0, c = 0):
     print(f'A soma vale {s}.')
 
 
-somar(3, 2, 5)
-somar(8, 4)
-somar()
-somar(b=4, c=5)
+soma(3, 2, 5)
+soma(8, 4)
+soma()
+soma(b=4, c=5)
 
 
 # Escopo de variáveis
@@ -55,7 +55,7 @@ teste()
 #print(f'Na função teste, x vale {x}.')  neste caso o X não funciona por ser local
 
 # Retorno de valores
-def somar(a = 0, b = 0, c = 0):
+def somar(a=0, b=0, c=0):
     s = a + b + c
     return s
 
@@ -64,4 +64,4 @@ r1 = somar(3, 2, 5)
 r2 = somar(2, 2)
 r3 = somar(6)
 
-print(f'Os resultados foram {r1}, {r2} e {3}.')
+print(f'Os resultados foram {r1}, {r2} e {r3}.')
