@@ -1,10 +1,13 @@
-# Faça um programa que tenha uma função notas() que pode receber várias notas de alunos e vai retornar um dicionário
-# com as seguintes informações:
+# Faça um programa que tenha uma função notas() que pode receber várias notas de alunos
+# e vai retornar um dicionário com as seguintes informações:
 # – Quantidade de notas
 # – A maior nota
 # – A menor nota
 # – A média da turma
 # – A situação (opcional)
+
+# Esta é a minha solução que é diferente da que o professor Gustavo Guanabara mostrou em
+# aula de resolução.
 
 def notas(*num, sit=False):
     """
@@ -37,12 +40,26 @@ def notas(*num, sit=False):
             dicionario['situação'] = 'BOA'
         else:
             dicionario['situação'] = 'RAZOÁVEL'
+    '''
+    # Esta foi a solução do professor Gustavo Guanabara.
+    dicionario['total'] = len(num)
+    dicionario['maior'] = max(num)
+    dicionario['menor'] = min(num)
+    dicionario['media'] = sum(num)/len(num)
+    if sit:
+        if dicionario['media'] >= 7:
+            dicionario['situação'] = 'BOA'
+        elif dicionario['media'] >= 5:
+            dicionario['situação'] = 'RAZOÁVEL'
+        else:
+            dicionario['situação'] = 'RUIM'
+    '''
     return dicionario
 
 
 
 #Programa principal
 print('~' * 75)
-resp = notas(5.5, 9.5, 3.5, 7, 8, 6.5, 8, 8, sit=True)
+resp = notas(9, 7, 8, 8, 8, sit=True)
 print(resp)
-help(notas)
+#help(notas)
