@@ -2,11 +2,13 @@
 # ano de nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa
 # tem voto NEGADO, OPCIONAL e OBRIGATÓRIO nas eleições.
 
-from datetime import date
+# Minha visão da resolução do exercício proposto é diferente a do professor
+# Gustavo Guanabara.
 
 def voto(data):
+    from datetime import date
     idade = date.today().year - data
-    print(f'Com {idade} anos e ', end='')
+    print(f'Com {idade} anos, ', end='')
     if idade < 16:
         return 'NEGADO'
     elif idade >= 18 and idade <= 65:
