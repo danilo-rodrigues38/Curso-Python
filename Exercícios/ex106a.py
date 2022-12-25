@@ -27,7 +27,7 @@ def titulo(msg, cor=0):
     sleep(1)
 
 
-# Programa padrão
+# Programa principal
 comando = ''
 while True:
     titulo('SISTEMA DE AJUDA PyHELP', 2)
