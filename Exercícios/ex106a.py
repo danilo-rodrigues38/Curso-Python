@@ -1,11 +1,11 @@
 from time import sleep
 c = ('\033[m',        # 0 = Sem cores
-     '\033[0;30;41',  # 1 = 30 - letra branca, 41 - fundo Vermelho
-     '\033[0;30;42',  # 2 = 30 - letra branca, 42 - fundo Verde
-     '\033[0;30;43',  # 3 = 30 - letra branca, 43 - fundo Amarelo
-     '\033[0;30;44',  # 4 = 30 - letra branca, 44 - fundo Azul
-     '\033[0;30;45',  # 5 = 30 - letra branca, 45 - fundo roxo
-     '\033[7;30'      # 6 =  7 - inverte as cores, neste caso, letra preta e fundo branco
+     '\033[0;30;41m',  # 1 = 30 - letra branca, 41 - fundo Vermelho
+     '\033[0;30;42m',  # 2 = 30 - letra branca, 42 - fundo Verde
+     '\033[0;30;43m',  # 3 = 30 - letra branca, 43 - fundo Amarelo
+     '\033[0;30;44m',  # 4 = 30 - letra branca, 44 - fundo Azul
+     '\033[0;30;45m',  # 5 = 30 - letra branca, 45 - fundo roxo
+     '\033[7;30m'      # 6 =  7 - inverte as cores, neste caso, letra preta e fundo branco
      )
 
 
