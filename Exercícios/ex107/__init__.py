@@ -3,7 +3,7 @@ def aumentar(vl, porc=0):
     print(f'Aumentando {porc}%, temos R$ {valor}')
 
 
-def diminuir(vl, porc):
+def diminuir(vl, porc=0):
     valor = vl + (vl * (porc / 100))
     print(f'Diminuindo {porc}%, temos R$ {valor}')
 
@@ -16,4 +16,3 @@ def dobro(vl):
 def metade(vl):
     valor = vl / 2
     print(f'A metade de R$ {vl} é {valor}')
-
