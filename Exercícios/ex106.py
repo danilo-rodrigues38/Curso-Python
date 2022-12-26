@@ -18,7 +18,7 @@ def sysHelp(msg):
     print('~' * tam)
     print('\033[m', end='')
     sleep(1)
-    print(f'\033[7;40m')
+    print('\033[7;40m')
     help(msg)
     print('\033[m', end='')
     sleep(1.5)
