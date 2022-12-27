@@ -1,7 +1,11 @@
+def linha():
+    print('-' * 60)
+
+
 def cabeçalho(msg):
-    print('-' * 50)
-    print(msg.center(50))
-    print('-' * 50)
+    linha()
+    print(msg.center(60))
+    linha()
 
 
 def menu():
@@ -9,7 +13,7 @@ def menu():
     print('\033[33m1 -\033[m \033[34mVer pessoas cadastradas\033[m')
     print('\033[33m2 -\033[m \033[34mCadastrar novas pessoas\033[m')
     print('\033[33m3 -\033[m \033[34mSair do Sistema\033[m')
-    print('-' * 50)
+    linha()
 
 
 def opção(msg):
@@ -37,16 +41,27 @@ def relatorio(msg):
         print('\n\033[31mErro ao ler arquivo!')
     else:
         cabeçalho('Pessoas Cadastradas')
-        print(a.readlines())
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+            print(f'{dado[0]:<50}{dado[1]:>3} anos')
+    finally:
+        a.close()
 
 
-def cadastro(msg):
+def cadastro(arq, nome, idade):
     try:
-        a = open(msg, 'at')
+        a = open(arq, 'at')
     except:
-        print('\n\033[31mErro ao ler arquivo!')
+        print('\033[31mHouve um erro na abertura do arquivo!\033[m')
     else:
-        cabeçalho('NOVO CADASTRO')
+        try:
+            a.write(f'{nome};{idade}\n')
+        except:
+            print('\033[31mHouve um ERRO ao escrever ods dados!\033[m')
+        else:
+            print(f'\033[32mNovo registro de {nome} adicionado.\033[m')
+            a.close()
 
 
 def arquivoExiste(msg):
@@ -67,3 +82,20 @@ def criarArquivo(msg):
         print('\n\n\033[31mHouve um erro na criação do arquivo!\033[m')
     else:
         print(f'\n\n\033[32mAquivo {msg} criado com sucesso!!!\033[m'.center(50))
+
+
+def leiaint(msg):
+    while True:
+        try:
+            num = int(input(msg))
+        except ValueError:
+            print('\033[31mDados informados incorretos!'
+                  '\nDigite somente números inteiros.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print('\n\033[31mInterrompido pelo usuário\033[m')
+            return 0
+        except Exception as erro:
+            print(f'O problema encontrado foi {erro.__class__}')
+        else:
+            return num
